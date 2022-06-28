@@ -1,9 +1,9 @@
-﻿int number = new Random().Next(1,8);
-Console.WriteLine($"Номер дня недели: {number}");
+﻿Console.WriteLine("Введите номер дня недели: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
-for (;number < 5;)
+for (;number <= 5;)
 {
-    Console.WriteLine("Выбранное число является буднем днем: ");
+    Console.Write("Выбранное число является буднем днем: ");
     if (number == 1)
     {
     Console.Write("понедельник");
@@ -29,7 +29,7 @@ for (;number < 5;)
 
 for (;number >5;)
 {
-    Console.WriteLine("Выбранное число является выходным днем: ");
+    Console.Write("Выбранное число является выходным днем: ");
     if (number == 6)
     {
     Console.Write("суббота");
